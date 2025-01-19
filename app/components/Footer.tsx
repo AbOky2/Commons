@@ -4,7 +4,7 @@ import logo from "../logo.png"
 import anats3 from "../anats2.png"
 
 
-function Header() {
+function Footer() {
 
 
   return (
@@ -29,21 +29,9 @@ function Header() {
             
         </div>
 
-        <div className='text-gray-700  border-t-1 border-gray-200 p-6 flex gap-12 px-20 justify-start shadow-md'>
+        <div className='text-gray-700  border-t-1 border-gray-200 p-6 flex gap-12 px-20 justify-center shadow-md'>
             <div>
-                <p>Acceuil</p>
-            </div>
-            <div>
-                <p>Vos Demarches</p>
-            </div>
-            <div>
-                <p>L&apos;Agence</p>
-            </div>
-            <div>
-                <p>Aide & Contact</p>
-            </div>
-            <div>
-                <p>Actualités</p>
+              © 2025 Tous droits reservés 
             </div>
         </div>
 
@@ -52,4 +40,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Footer

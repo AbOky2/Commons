@@ -11,7 +11,7 @@ const myFont = localFont({ src: '../fonts/Marianne-Bold.woff2' })
 
 function Accueil() {
   return (
-    <div className='p-20 bg-gray-200'>
+    <div className='p-20 bg-gray-100'>
       <div>
         <p className={`${myFont.className} text-4xl leading-28`}>
              Bienvenue sur le site <br/> officiel de l&apos;ANATS - Agence<br/> nationale des titres sécurisés
