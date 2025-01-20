@@ -1,14 +1,13 @@
-"use client";
 import React from 'react'
 import Header from '../components/Header'
+import Permis from '../components/Permis'
 import Footer from '../components/Footer'
-import Passeport from '../components/Passeport'
 
 function page() {
   return (
     <div>
         <Header/>
-        <Passeport/>
+        <Permis/>
         <Footer/>
     </div>
   )

@@ -56,8 +56,14 @@ function Header() {
                                     Passeport
                                 </Link>
                             </DropdownItem>
-                        <DropdownItem key="copy" className='border-b-1 rounded-none'>CNI</DropdownItem>
-                        <DropdownItem key="edit">Permis</DropdownItem>
+                        <DropdownItem key="copy" className='border-b-1 rounded-none'>
+                            <Link href="cni">CNI
+                            </Link>
+                        </DropdownItem>
+                        <DropdownItem key="edit">
+                            <Link href="permis">Permis
+                            </Link>
+                        </DropdownItem>
                     </DropdownMenu>
                     </Dropdown>
                 </div>
