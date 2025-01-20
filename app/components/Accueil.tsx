@@ -11,7 +11,7 @@ const myFont = localFont({ src: '../fonts/Marianne-Bold.woff2' })
 
 function Accueil() {
   return (
-    <div className='p-20 bg-gray-100'>
+    <div className='p-20 bg-gray-100 text-black'>
       <div>
         <p className={`${myFont.className} text-4xl leading-28`}>
              Bienvenue sur le site <br/> officiel de l&apos;ANATS - Agence<br/> nationale des titres sécurisés
@@ -28,8 +28,8 @@ function Accueil() {
             <div className='text-white'>
               <Image src={Passport} width={30} height={30} alt='' className=''/>
             </div>
-            <div>
-                <p className='text-gray-300 font-bold '>Passport</p>
+            <div className='mt-2'>
+                <p className='text-gray-200 font-regular '>Passport</p>
             </div>
             <div className='flex  justify-end p-4 '>
                 <ChevronRightIcon width={30} height={30} className=' cursor-pointer'/>
@@ -40,8 +40,8 @@ function Accueil() {
             <div className=''>
               <Image src={Permis} width={30} height={30} alt='' className=''/>
             </div>
-            <div>
-                <p>Permis</p>
+            <div className='mt-2'>
+                <p className='text-gray-200 font-regular'>CNI</p>
             </div>
             <div className='flex  justify-end p-4 '>
                 <ChevronRightIcon width={30} height={30} className=' cursor-pointer' />
@@ -52,8 +52,8 @@ function Accueil() {
             <div className=''>
               <Image src={Car} width={30} height={30} alt='' className=''/>
             </div>
-            <div>
-                <p>Immatriculation</p>
+            <div className='mt-2'>
+                <p className='text-gray-200 font-regular'>Permis</p>
             </div>
             <div className='flex  justify-end p-4 '>
                 <ChevronRightIcon width={30} height={30} className=' cursor-pointer' />

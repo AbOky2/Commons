@@ -1,10 +1,18 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import Image from 'next/image'
 import logo from "../logo.png"
 import anats3 from "../anats2.png"
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@heroui/react";
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 
 
 function Header() {
+    const [chevrone, setChevrone] = useState(true);
+
+    const handleClick =() =>{
+        setChevrone(!chevrone);
+    }
 
 
   return (
@@ -29,20 +37,36 @@ function Header() {
             
         </div>
 
-        <div className='text-gray-700  border-t-1 border-gray-200 p-6 flex gap-12 px-20 justify-start shadow-md'>
-            <div>
+        <div className='text-gray-700  border-t-1 border-gray-200  flex gap-12 px-20 justify-start shadow-md'>
+            <div className='p-6'>
                 <p>Acceuil</p>
             </div>
-            <div>
-                <p>Vos Demarches</p>
+            <div className='hover:bg-zinc-200 cursor-pointer p-6 flex  gap-3'>
+                <div className='w-full'>
+                    <Dropdown  className='bg-gray-100 mx-16 mt-4 border-1 border-gray-100 rounded-sm text-gray-700'>
+                    <DropdownTrigger onClick={handleClick} className='' >
+                        <p>Vos démarches</p>
+                    </DropdownTrigger>
+                    <DropdownMenu aria-label="Static Actions" onClose={handleClick} >
+                        <DropdownItem key="new" className='border-b-1 rounded-none'>Passeport</DropdownItem>
+                        <DropdownItem key="copy" className='border-b-1 rounded-none'>CNI</DropdownItem>
+                        <DropdownItem key="edit">Permis</DropdownItem>
+                    </DropdownMenu>
+                    </Dropdown>
+                </div>
+                <div className=' w-6 items-center flex'>
+                    {chevrone ? (<ChevronDownIcon  />):(<ChevronUpIcon/>)}
+                </div>
+            
+            
             </div>
-            <div>
+            <div className='p-6'>
                 <p>L&apos;Agence</p>
             </div>
-            <div>
+            <div className='p-6'>
                 <p>Aide & Contact</p>
             </div>
-            <div>
+            <div className='p-6'>
                 <p>Actualités</p>
             </div>
         </div>

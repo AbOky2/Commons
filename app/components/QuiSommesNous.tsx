@@ -38,16 +38,16 @@ function QuiSommesNous() {
             </p>
         </div>
         <div className=' w-full flex '>
-            <div className='flex w-full '>
+            <div className='flex w-full object-contain '>
                 <Image src={Anats3} className='w-full h-96 object-fit' alt=''/>
             </div>
             <div className='flex bg-zinc-100 text-center '>
-                <p className={`${myFont2.className}  text-md leading-28 text-black my-20 font-bold p-12`}>
+                <p className={`${myFont2.className}  text-md leading-28 text-black my-20 font-extrabold p-12`}>
                 <br/>L&apos;ANATS vous accompagne au quotidien dans vos démarches et vos déplacements.<br/> 
                 Elle répond à vos questions concernant vos démarches en ligne Passport, cartes et permis de conduire.
 
 
-.</p>
+.           </p>
             </div>
         </div>
         
