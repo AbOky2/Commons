@@ -5,6 +5,7 @@ import Permis from "../permis.png";
 import Passport from "../passport.png";
 import Car from "../car.png";
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 //👇 Configure our local font object
 const myFont = localFont({ src: '../fonts/Marianne-Bold.woff2' })
@@ -29,10 +30,12 @@ function Accueil() {
               <Image src={Passport} width={30} height={30} alt='' className=''/>
             </div>
             <div className='mt-2'>
-                <p className='text-gray-200 font-regular '>Passport</p>
+                <p className='text-gray-200 font-regular '>Passeport</p>
             </div>
             <div className='flex  justify-end p-4 '>
+                <Link href="passeport">
                 <ChevronRightIcon width={30} height={30} className=' cursor-pointer'/>
+                </Link>
             </div>
         </div>
 
@@ -44,7 +47,9 @@ function Accueil() {
                 <p className='text-gray-200 font-regular'>CNI</p>
             </div>
             <div className='flex  justify-end p-4 '>
+                <Link href="cni">
                 <ChevronRightIcon width={30} height={30} className=' cursor-pointer' />
+                </Link>
             </div>
         </div>
 
@@ -56,7 +61,10 @@ function Accueil() {
                 <p className='text-gray-200 font-regular'>Permis</p>
             </div>
             <div className='flex  justify-end p-4 '>
+                <Link href="permis">
                 <ChevronRightIcon width={30} height={30} className=' cursor-pointer' />
+                </Link>
+
             </div>
         </div>
       </div>
