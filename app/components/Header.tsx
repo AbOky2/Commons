@@ -5,6 +5,7 @@ import logo from "../logo.png"
 import anats3 from "../anats2.png"
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@heroui/react";
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 
 function Header() {
@@ -38,8 +39,10 @@ function Header() {
         </div>
 
         <div className='text-gray-700  border-t-1 border-gray-200  flex gap-12 px-20 justify-start shadow-md'>
-            <div className='p-6'>
-                <p>Acceuil</p>
+            <div className='p-6 hover:bg-zinc-200 cursor-pointer'>
+                <Link href="/">
+                Acceuil
+                </Link>
             </div>
             <div className='hover:bg-zinc-200 cursor-pointer p-6 flex  gap-3'>
                 <div className='w-full'>
@@ -48,7 +51,11 @@ function Header() {
                         <p>Vos démarches</p>
                     </DropdownTrigger>
                     <DropdownMenu aria-label="Static Actions" onClose={handleClick} >
-                        <DropdownItem key="new" className='border-b-1 rounded-none'>Passeport</DropdownItem>
+                            <DropdownItem key="new" className='border-b-1 rounded-none'>
+                                <Link href="passeport">
+                                    Passeport
+                                </Link>
+                            </DropdownItem>
                         <DropdownItem key="copy" className='border-b-1 rounded-none'>CNI</DropdownItem>
                         <DropdownItem key="edit">Permis</DropdownItem>
                     </DropdownMenu>
